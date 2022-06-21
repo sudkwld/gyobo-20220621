@@ -37,7 +37,7 @@
             <li><a href="#">회원가입</a></li>
             <li><a href="#">출석체크</a></li>
             <li><a href="#">고객센터</a></li>
-            <li><a href="#">주문배송</a></li>
+            <li><a href="#">주문배송<img src="img/icon_cart.png" alt="cart"></a></li>
             <li><a href="#"></a></li>
           </ul>
         </div>
@@ -66,7 +66,7 @@
             <li><a href="#">일잘러X물렁이</a></li>
           </ul>
           <div class="next_btn">
-            <button class="header_btn_left">&lt;</button><button class="header_btn_right">&gt;</button>
+            <img src="img/btn_left.gif" alt="left_button" class="btn_left"><img src="img/btn_right.gif" alt="right_button" class="btn_right">
           </div>
           <input type="search" value="무루 추천! 올여름 단 한권의 에세이"><img src="img/btn_search.png" alt="search">
         </div>
@@ -76,15 +76,20 @@
           <a href="#"><img src="img/bnD_w03.jpg" alt="bnd"></a>
           <a href="#"><img src="img/bnG_02.jpg" alt="bng2"></a>
           <a href="#"><img src="img/bnO_w03.jpg" alt="bno"></a>
+          <div class="ch_numb">
+            <img src="img/side_left.png" alt="side_left" class="side_left">
+            <img src="img/side_right.png" alt="side_right" class="side_right">
+          </div>
         </div>
       </div>
     </header>
   </div>
   <script>
-    const clickLeft = document.querySelector(".header_btn_left");
-    const clcikRight = document.querySelector(".header_btn_right");
+    const clickLeft = document.querySelector(".btn_left");
+    const clcikRight = document.querySelector(".btn_right");
     const searchPageOne = document.querySelector(".search_page1");
     const searchPageTwo = document.querySelector(".search_page2");
+    
     function clickBtnLeft() {
       clickLeft.addEventListener("click", e => {
         searchPageTwo.style.display = 'block';
